@@ -1,6 +1,6 @@
 # main.py -- put your code here!\n
 import machine, time\n
-led = machine.LED(\"LED_BLUE\")\n
+led = machine.LED(\"LED_RED\")\n
 while (True):\n
    led.on()\n
    time.sleep_ms(550)\n
