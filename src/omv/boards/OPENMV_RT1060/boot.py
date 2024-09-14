@@ -1,6 +1,5 @@
 import machine, time
 led = machine.LED("LED_RED")
-
 while (True):
    led.on()
    time.sleep_ms(550)
