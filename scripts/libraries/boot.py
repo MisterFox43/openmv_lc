@@ -1,4 +1,4 @@
-import machine,
+import machine
 import time
 led = machine.LED("LED_RED")
 while (True):
