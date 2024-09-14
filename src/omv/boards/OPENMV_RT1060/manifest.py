@@ -5,7 +5,6 @@ require("onewire")
 require("ds18x20")
 require("dht")
 require("neopixel")
-freeze ("$(OMV_LIB_DIR)/", "boot.py")
 freeze ("$(OMV_LIB_DIR)/", "modbus.py")
 freeze ("$(OMV_LIB_DIR)/", "pid.py")
 freeze ("$(OMV_LIB_DIR)/", "bno055.py")
@@ -33,3 +32,6 @@ freeze ("$(OMV_LIB_DIR)/", "mutex.py")
 
 # Bluetooth
 require("aioble")
+
+# Main
+freeze ("$(OMV_LIB_DIR)/", "boot.py")
