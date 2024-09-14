@@ -6,7 +6,7 @@ static const char fresh_main_py[] =
     "   led.on()\n"
     "   time.sleep_ms(550)\n"
     "   led.off()\n"
-    "   time.sleep_ms(500)\n"
+    "   time.sleep_ms(400)\n"
     "   led.on()\n"
     "   time.sleep_ms(550)\n"
     "   led.off()\n"
