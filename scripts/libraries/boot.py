@@ -10,7 +10,6 @@ from image import SEARCH_EX
 
 version_text="OPENMV_MX_Machinevision_Recom-Maximilian_Haidn-v1.21 \r\n"
 
-
 i=0
 usb_ena=False
 if usb_ena:
@@ -132,7 +131,7 @@ def templatematch():
         img.draw_rectangle(r)
         sensor.set_pixformat(sensorpixformat)
         sensor.set_framesize(sensorframesize)
-
+        i2c.writeto(0x23, bytearray([0x78]))
         return("24V")
 
     r = img.find_template(
@@ -142,6 +141,7 @@ def templatematch():
         img.draw_string(r[0],r[1],"48",color=(255, 255, 255),scale=2,)
         sensor.set_pixformat(sensorpixformat)
         sensor.set_framesize(sensorframesize)
+        i2c.writeto(0x23, bytearray([0x78]))
         return("48V")
     img = sensor.snapshot()
     i2c.writeto(0x23, bytearray([0x78]))
