@@ -8,7 +8,7 @@ import image
 from machine import UART, SoftI2C, Pin
 from image import SEARCH_EX
 
-version_text="OPENMV_MX_Machinevision_Recom_v1.0 \r\n"
+version_text="OPENMV_MX_Machinevision_Recom-Maximilian_Haidn-v1.21 \r\n"
 
 
 i=0
@@ -103,6 +103,7 @@ def positionmatch():
         sensor.set_pixformat(sensorpixformat)
         sensor.set_framesize(sensorframesize)
         print("Position Found")
+        i2c.writeto(0x23, bytearray([0x78]))
         return(r)
 
     img = sensor.snapshot()
