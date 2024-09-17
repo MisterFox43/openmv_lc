@@ -35,6 +35,3 @@ require("aioble")
 
 # Main
 freeze ("$(OMV_LIB_DIR)/", "boot.py")
-freeze ("$(OMV_LIB_DIR)/", "templatefid.pgm")
-freeze ("$(OMV_LIB_DIR)/", "template24V.pgm")
-freeze ("$(OMV_LIB_DIR)/", "template48V.pgm")
